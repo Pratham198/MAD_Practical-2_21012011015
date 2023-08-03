@@ -25,6 +25,24 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         showMessage("onResume() is called")
     }
+    override fun onPause() {
+        super.onPause()
+        showMessage("onPause() is called")
+    }
+    override fun onStop() {
+        super.onStop()
+        showMessage("onStop() is called")
+    }
+    override fun onRestart() {
+        super.onRestart()
+        showMessage("onRestart() is called")
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        showMessage("onDestroy() is called")
+    }
+
+
     fun showMessage(message: String)
     {
         Log.i(TAG, message )
